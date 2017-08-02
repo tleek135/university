@@ -1,0 +1,12 @@
+Script started on Mon 13 Apr 2015 10:41:46 AM PDT
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ g++ -c Account.cpp
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ c[Kg++ -c Bank.cpp
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ g++ -c Bank_main.cpp
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ g++ -o Bank Account.o Bank.0[Ko Bank_main.c[Ko
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ ./[K[K./Bank
+Savings Balance: $1010
+Checking Balance: $125
+]0;coding_lab@CSTesting: ~/CS202/lab1coding_lab@CSTesting:~/CS202/lab1$ exit
+exit
+
+Script done on Mon 13 Apr 2015 10:43:15 AM PDT

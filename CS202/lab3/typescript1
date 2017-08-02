@@ -1,0 +1,23 @@
+Script started on Sat 25 Apr 2015 02:24:14 PM PDT
+]0;coding_lab@CSTesting: ~/CS202/lab3coding_lab@CSTesting:~/CS202/lab3$ c++ lab3_pointers.cpp
+]0;coding_lab@CSTesting: ~/CS202/lab3coding_lab@CSTesting:~/CS202/lab3$ ./a.out
+Jonas is 5 characters long.
+Copying Bob to a second array...
+The second array now has Bob
+Copying part of Billy Bob to another array...
+The other array now has Billy
+Appending Thornton to Billy Bob...
+The new concatenated string is now Billy Bob Thornton
+
+str1=abcd str2=efg
+strlen(str1)=4 strlen(str2)=3
+str1=efg
+str1=efgefg
+strcmp(str1, str2)=101
+strcmp(str2, "efh")=-1
+str2=hi
+str2=hi jkl
+]0;coding_lab@CSTesting: ~/CS202/lab3coding_lab@CSTesting:~/CS202/lab3$ exit
+exit
+
+Script done on Sat 25 Apr 2015 02:24:42 PM PDT

@@ -1,0 +1,89 @@
+Script started on Mon 12 Jun 2017 10:50:11 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kmmake[?1l>[0m[27m[24m[J% make[K
+g++ -c Parser.cpp
+g++ -o lab2 CSE570_lab2main.cpp Parser.o
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab2[?1l>[0m[27m[24m[J% ./lab2[K
+Please enter the name of the grammar file: g417
+List of Productions:
+D->+TD
+D->e
+E->TD
+F->(E)
+F->I
+I->x
+I->y
+I->z
+T->FU
+U->*FU
+U->e
+The set of terminals is:
+(
+)
+*
++
+x
+y
+z
+The set of non-terminals is:
+D
+E
+F
+I
+T
+U
+The FIRST set for ( is ( 
+The FIRST set for ) is ) 
+The FIRST set for * is * 
+The FIRST set for + is + 
+The FIRST set for D is + e 
+The FIRST set for E is ( x y z 
+The FIRST set for F is ( x y z 
+The FIRST set for I is x y z 
+The FIRST set for T is ( x y z 
+The FIRST set for U is * e 
+The FIRST set for x is x 
+The FIRST set for y is y 
+The FIRST set for z is z 
+The FOLLOW set for D is $ ) 
+The FOLLOW set for E is $ ) 
+The FOLLOW set for F is $ ) * + 
+The FOLLOW set for I is $ ) * + 
+The FOLLOW set for T is $ ) + 
+The FOLLOW set for U is $ ) + 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab2[?1l>[0m[27m[24m[J% ./lab2[K
+Please enter the name of the grammar file: g419
+List of Productions:
+E->E+T
+E->T
+F->(E)
+F->i
+S->E
+T->F
+T->T*F
+The set of terminals is:
+(
+)
+*
++
+i
+The set of non-terminals is:
+E
+F
+S
+T
+The FIRST set for ( is ( 
+The FIRST set for ) is ) 
+The FIRST set for * is * 
+The FIRST set for + is + 
+The FIRST set for E is ( i 
+The FIRST set for F is ( i 
+The FIRST set for S is ( i 
+The FIRST set for T is ( i 
+The FIRST set for i is i 
+The FOLLOW set for E is $ ) + 
+The FOLLOW set for F is $ ) * + 
+The FOLLOW set for S is $ 
+The FOLLOW set for T is $ ) * + 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 12 Jun 2017 10:51:13 PM PDT

@@ -1,0 +1,11 @@
+This is a test
+of the functionality of this file.
+I am attempting to insert alternating lines
+from two different files into a third file.
+I am using the file stream features of C++
+in order to do this. 
+Now these extra few lines of text are here
+
+simply to see whether or not the program 
+can copy extra lines from a longer text file.
+

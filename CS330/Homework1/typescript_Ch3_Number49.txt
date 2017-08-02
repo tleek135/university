@@ -1,0 +1,20 @@
+Script started on Wed 28 Oct 2015 01:02:09 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kcc++ [33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++[K[1C[33m[39m
+ [33m-- input file --[39m
+[J[0mHomework1_Ch3_Number49.cpp  [Jtypescript                [J[A[A[0m[27m[24m[2Cc++[K[1C[33m[39m[33m[39m[33m[39mHomework1_Ch3_Number49.cpp[33m[39m
+ [33m-- input file --[39m[K[K
+[J[7mHomework1_Ch3_Number49.cpp[0m  [Jtypescript                [J[A[A[0m[27m[24m[2Cc++ Homework1_Ch3_Number49.cpp[K
+[1B[7mHomework1_Ch3_Number49.cpp[0m  [7mHomework1_Ch3_Number49.cpp[0m  [A[A[0m[27m[24m[2Cc++ Homework1_Ch3_Number49.cpp[K
+[J[A[32C[1m [0m[0m[27m[24m[J% c++ Homework1_Ch3_Number49.cpp[1m [0m[K[0m [?1l>[0m[27m[24m[J% c++ Homework1_Ch3_Number49.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a number for which you would like to sum the digits: 23
+The sum of the digits in the number 23 is: 5
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a number for which you would like to sum the digits: 1234
+The sum of the digits in the number 1234 is: 10
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a number for which you would like to sum the digits: 90513
+The sum of the digits in the number 90513 is: 18
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Wed 28 Oct 2015 01:02:54 AM PDT

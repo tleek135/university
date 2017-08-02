@@ -1,0 +1,140 @@
+// Class: CSE 455
+// Term: Winter 2016
+// Instructor: Dr. Concepcion
+// Name: Kyle Lee
+// PSP Assignment #3
+// Title: Correlation Between Two Sets of Numbers
+
+#include <iostream>
+#include <vector>
+#include <cmath> //for sqrt() function
+
+using namespace std;
+
+class Correlation
+{
+private:
+	double xSum, xSquaredSum, ySum, ySquaredSum, twoVariableSum, rValue, tValue, pValue;
+	const double TCHART[2][9] = { {0, 0.60, 0.70, 0.85, 0.90, 0.95, 0.975, 0.99, 0.995} ,
+	{5, 0.267, 0.559, 1.156, 1.476, 2.015, 2.571, 3.365, 4.032} };
+
+public:
+	//Constructor
+	Correlation()
+	{
+		xSum = xSquaredSum = ySum = ySquaredSum = twoVariableSum = rValue = 0;
+		tValue = pValue = 0;
+	}
+
+	double square(double value)
+	{
+		return value * value;
+	}
+
+	//Calculates sigma for one variable
+	double sigmaOneVariable(vector<double> data, bool variableSquared)
+	{
+		double sum = 0;
+		
+		if (variableSquared)
+		{
+			for (int i = 0; i < data.size(); i++) 
+				sum += square(data[i]);
+		}
+
+		for (int i = 0; i < data.size(); i++)
+			sum += data[i];
+		return sum;
+	}
+
+	//Calculates sigma for two variables
+	double sigmaTwoVariable(vector<double> firstSet, vector<double> secondSet)
+	{
+		double sum = 0;
+		
+		for (int i = 0; i < firstSet.size(); i++)
+			sum += (firstSet[i] * secondSet[i]);
+		return sum;
+	}
+
+	//Uses correlation formula to calculate correlation (r value)
+	double calculateCorrelation(vector<double> firstSet, vector<double> secondSet)
+	{
+		xSum = sigmaOneVariable(firstSet, false);
+		ySum = sigmaOneVariable(secondSet, false);
+		xSquaredSum = sigmaOneVariable(firstSet, true);
+		ySquaredSum = sigmaOneVariable(secondSet, true);
+		twoVariableSum = sigmaTwoVariable(firstSet, secondSet);
+
+		rValue = (firstSet.size() * twoVariableSum - (xSum * ySum))/
+				 sqrt((firstSet.size()*xSquaredSum - square(xSum))*
+				 (firstSet.size()*ySquaredSum - square(ySum)));
+
+		return rValue;
+	}
+
+	//Calculates t value
+	double tValueCalc(vector<double> data)
+	{
+		tValue = (abs(rValue) * sqrt(data.size()-2))/
+				 sqrt(1-square(rValue));
+
+		return tValue;
+	}
+
+	//Calculates p by interpolation
+	double pValueCalc()
+	{
+		int row, column;
+		double x, y, a, b; //differences between t and p values
+		double lowerTBound, upperTBound, lowerPBound, upperPBound;
+		for (int i = 1; i < 9; i++)
+		{
+			if (tValue <= TCHART[1][i])
+			{
+				lowerTBound = TCHART[1][i-1]; upperTBound = TCHART[1][i];
+				lowerPBound = TCHART[0][i-1]; upperPBound = TCHART[0][i];
+				x = tValue - lowerTBound; y = upperTBound - lowerTBound;
+				b = upperPBound - lowerPBound; a = x*b/y;
+				pValue = lowerPBound + a;
+				return pValue;
+			}
+		}
+		return 0;
+	}
+
+	double significanceCalc()
+	{
+		return 2 * (1 - pValue);
+	}
+};
+
+main()
+{
+	vector<double> x, y;
+	double temp;
+	Correlation dataSet;
+
+	for (int i = 0; i < 7; i++) {
+		cout << "Enter a value for x[" << i << "]: ";
+		cin >> temp;
+		x.push_back(temp);
+	}
+
+	cout << endl;
+
+	for (int i = 0; i < 7; i++) {
+		cout << "Enter a value for y[" << i << "]: ";
+		cin >> temp;
+		y.push_back(temp);
+	}
+
+	temp = dataSet.calculateCorrelation(x, y);
+	cout << "r: " << temp << endl;
+	cout << "r squared: " << dataSet.square(temp) << endl;
+	cout << "t: " << dataSet.tValueCalc(x) << endl;
+	cout << "p: " << dataSet.pValueCalc() << endl;
+	cout << "Significance (2*(1-p)): " << dataSet.significanceCalc() << endl;
+
+}
+

@@ -1,0 +1,21 @@
+Script started on Mon 12 Jun 2017 10:55:36 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kmmake[?1l>[0m[27m[24m[J% make[K
+g++ -c dfa.cpp
+g++ -o lab1 CSE570_lab1.cpp dfa.o
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab1[?1l>[0m[27m[24m[J% ./lab1[K
+Please enter the name of the file containing the DFA data: example.txt
+Please enter a string to test (type "empty" w/o quotes for empty string): ababb
+ababb is in the language!
+Please enter another string, or type Ctrl-D (eof) to quit: abb
+abb is in the language!
+Please enter another string, or type Ctrl-D (eof) to quit: aaabbaabb
+aaabbaabb is in the language!
+Please enter another string, or type Ctrl-D (eof) to quit: c
+c is NOT in the language.
+Please enter another string, or type Ctrl-D (eof) to quit: aaaabbbcabb
+aaaabbbcabb is NOT in the language.
+Please enter another string, or type Ctrl-D (eof) to quit: abba
+abba is NOT in the language.
+Please enter another string, or type Ctrl-D (eof) to quit: [1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 12 Jun 2017 10:56:43 PM PDT

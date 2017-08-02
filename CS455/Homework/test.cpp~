@@ -1,0 +1,13 @@
+
+#include <iostream>
+
+using namespace std;
+
+main()
+{
+
+cout << "Number of lines (excluding whitespace and comments): 60" << endl;
+cout << "Filename: KyleLee_LineCounter.cpp" << endl;
+
+}
+

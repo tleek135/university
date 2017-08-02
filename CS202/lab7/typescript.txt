@@ -1,0 +1,32 @@
+Script started on Mon 25 May 2015 10:58:26 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kgg++ palindrome.cpp -o palindrome[?1l>[0m[27m[24m[J% g++ palindrome.cpp -o palindrome[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: rotor
+'rotor' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: RoToR
+'RoToR' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: Rotor
+'Rotor' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: thisi siht
+'thissiht' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: th issiht
+'th issiht' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: A man, a plan, a canal - Panama!
+'A man, a plan, a canal - Panama!' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: a man a plan a canal panama
+'a man a plan a canal panama' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: aman aplan aca nalpa nama
+'aman aplan aca nalpa nama' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./palindrome[?1l>[0m[27m[24m[J% ./palindrome[K
+Enter a string: Madam, I'm Adam
+'Madam, I'm Adam' is a palindrome.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 25 May 2015 11:00:31 PM PDT

@@ -1,0 +1,12 @@
+Script started on Wed 25 Nov 2015 10:41:03 AM PST
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kcc++ CS[33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ CSE_330_Homework2_[KCh[33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ CSE_330_Homework2_Ch9Number28_Lee_Kyle.cpp[K[?1l>[0m[27m[24m[J% c++ CSE_330_Homework2_Ch9Number28_Lee_Kyle.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Ka ../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+3 1 1 4 0 0 3 3 2 2 1 0 2 0 4 1 3 1 3 1 
+The number 0 appears in the linked list 4 times.
+The number 1 appears in the linked list 6 times.
+The number 2 appears in the linked list 3 times.
+The number 3 appears in the linked list 5 times.
+The number 4 appears in the linked list 2 times.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Wed 25 Nov 2015 10:42:17 AM PST

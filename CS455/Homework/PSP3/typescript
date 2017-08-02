@@ -1,0 +1,29 @@
+Script started on Sat 13 Feb 2016 05:55:44 PM PST
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kcc++ Ky[33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ KyleLee_PSPAssign3.cpp[K[?1l>[0m[27m[24m[J% c++ KyleLee_PSPAssign3.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K..a. ./a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a value for x[0]: 200
+Enter a value for x[1]: 800
+Enter a value for x[2]: 260
+Enter a value for x[3]: 450
+Enter a value for x[4]: 1500
+Enter a value for x[5]: 450
+Enter a value for x[6]: 1850
+Enter a value for x[7]: 900
+Enter a value for x[8]: 1650
+Enter a value for x[9]: 1400
+
+Enter a value for y[0]: 30
+Enter a value for y[1]: 118.7
+Enter a value for y[2]: 13
+Enter a value for y[3]: 40.8
+Enter a value for y[4]: 144.6
+Enter a value for y[5]: 26.6
+Enter a value for y[6]: 95.5
+Enter a value for y[7]: 77.60
+Enter a value for y[8]: 140.6
+Enter a value for y[9]: 140.8
+r (correlation): 0.846936
+r squared: 0.717301
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K[0m[27m[24m[J% [0m[27m[24m[J% eexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Sat 13 Feb 2016 05:57:42 PM PST

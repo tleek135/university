@@ -1,0 +1,68 @@
+/********************************************************************
+ * Kyle Lee
+ * count.cpp
+ * May 13, 2015
+ * CSE 202 (Wednesday lab)
+ * Description: Write a program to count the number of lines, words,
+   and characters in an input file. 
+ * Solution: Use input file stream object to open and read a file.
+   Use input string stream and getline function to count characters,
+   words, and lines.
+ * Percent complete: 100%
+********************************************************************/
+
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
+main()
+{
+	string word, line, filename;
+	int chars, words, lines;
+	istringstream line_string;
+	ifstream input;
+
+	cout << "Please enter a file name, or type Ctrl-D to finish: ";
+	cin >> filename;
+	
+	while (!cin.eof()) {
+		chars = words = lines = 0;
+		input.open(filename.c_str());
+		while (input.fail()) {
+			cout << "File not found. Please enter a different file name: ";
+			cin >> filename;
+			if (cin.eof())
+				break;
+			input.open(filename.c_str());
+		}
+		
+		if (cin.eof())
+			break;
+
+		getline(input, line);
+		while (!input.eof()) {
+		
+			lines++;
+	
+			chars += line.length() + 1; 
+
+			line_string.str(line);
+
+			while (line_string >> word)
+				words++;
+
+			line_string.clear(); 
+		
+			getline(input, line);
+		}
+		
+		input.close();
+		cout << lines << ' ' << words << ' ' << chars << endl;
+	
+		cout << "Please enter a file name, or type Ctrl-D to finish: ";
+		cin >> filename;
+	}
+}

@@ -1,0 +1,17 @@
+Script started on Sun 03 May 2015 10:44:34 AM PDT
+                                                                                [0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D[?1h=[0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77Dgg++ Homework2_pointers_alt.cpp[?1l>[0m[27m[24m[J% g++ Homework2_pointers_alt.cpp[K[21C[32m~/CS202/Homework/Homework2[39m[47D
+                                                                                [0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D[?1h=[0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D../a.out[?1l>[0m[27m[24m[J% ./a.out[K[44C[32m~/CS202/Homework/Homework2[39m[70D
+This program will calculate the average and maximum value for a list of floating-point numbers that you enter. Enter a value, then type Ctrl-D when done: 4.3
+Please enter another floating-point number: 2.6
+Please enter another floating-point number: 8.9
+Please enter another floating-point number: 1.5
+Please enter another floating-point number: 
+The average of those numbers is: 4.325
+The maximum is: 8.9
+                                                                                [0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D[?1h=[0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D../a.out < sampledata.txt[?1l>[0m[27m[24m[J% ./a.out < sampledata.txt[K[27C[32m~/CS202/Homework/Homework2[39m[53D
+This program will calculate the average and maximum value for a list of floating-point numbers that you enter. Enter a value, then type Ctrl-D when done: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: Please enter another floating-point number: 
+The average of those numbers is: 4.93
+The maximum is: 9.4
+                                                                                [0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77D[?1h=[0m[27m[24m[J% [K[51C[32m~/CS202/Homework/Homework2[39m[77Deexit[?1l>[0m[27m[24m[J% exit[K[47C[32m~/CS202/Homework/Homework2[39m[73D
+
+Script done on Sun 03 May 2015 10:45:51 AM PDT

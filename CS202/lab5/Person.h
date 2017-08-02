@@ -1,0 +1,33 @@
+/********************************************************************
+ * Kyle Lee
+ * Person.h
+ * May 6, 2015
+ * CSE 202 (Wednesday lab)
+ * Description: Create a class that represents a generic person, with
+   a name, DOB, and gender.
+ * Solution: Include function prototypes for constructors, a print 
+   function, and protected member variables for name, DOB, and gender.
+ * Percent complete: 100%
+********************************************************************/
+
+#ifndef Person_h
+#define Person_h
+
+#include <string>
+
+using namespace std;
+
+//Represents a person with a name, DOB, and gender
+class Person 
+{
+public:
+    Person();
+    Person(string n, string d, string g);
+    virtual void print();
+protected:
+    string name;
+    string dob;
+    string gender;
+};
+
+#endif // Person_h

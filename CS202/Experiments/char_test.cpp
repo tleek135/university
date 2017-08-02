@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+main()
+{
+	int number;
+	char character;
+
+	number = 'n';
+	character = 110;
+
+	cout << number << " " << character << endl;
+}

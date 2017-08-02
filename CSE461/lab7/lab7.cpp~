@@ -1,0 +1,41 @@
+/*
+ * Name: Kyle Lee
+ * Date: May 29, 2017
+ * Class: CSE 461
+ * Term: Spring 2017
+ * Lab 7
+ */
+
+#include "Table.h"
+
+void query(Table& table, string date)
+{
+	table.search(date);
+}
+		
+int main()
+{
+ 	Table database("disk1", 256, 128, "flatf", "index");
+
+	string file;
+	cout << "Please enter the name of the database input file: ";
+	cin >> file;
+
+	while (database.build_table(file) == 0) {
+		cout << "Enter a valid file name: ";
+		cin >> file;
+	}
+	
+	string date;
+	cout << "Enter the date for the record you want to find, or Ctrl-D to quit: ";
+	cin >> date;
+
+	while (!cin.eof()) {
+		//while (date.length() < 5)
+		//	date += " ";
+
+		query(database, date);
+		cout << "Enter another date, or type Ctrl-D to quit: ";
+		cin >> date;
+	}
+}

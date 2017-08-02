@@ -1,0 +1,2 @@
+name <- "Bob"
+name <- 42 //Error! name is of type string

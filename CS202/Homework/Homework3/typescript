@@ -1,0 +1,26 @@
+Script started on Mon 25 May 2015 11:55:17 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kgg++ Workers_main.cpp -o workers[?1l>[0m[27m[24m[J% g++ Workers_main.cpp -o workers[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../workers[?1l>[0m[27m[24m[J% ./workers[K
+Worker Name: Rivers Cuomo
+Hourly Rate: $11.00
+How many hours did this employee work this week? 40
+Weekly earnings is: $440.00
+
+Worker Name: Brian Bell
+Hourly Rate: $11.00
+How many hours did this employee work this week? 30
+Weekly earnings is: $440.00
+
+Worker Name: Patrick Wilson
+Hourly Rate: $12.50
+How many hours did this employee work this week? 40  30  40
+Weekly earnings is: $500.00
+
+Worker Name: Scott Shriner
+Hourly Rate: $12.50
+How many hours did this employee work this week? 50
+Weekly earnings is: $687.50
+
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 25 May 2015 11:56:13 PM PDT

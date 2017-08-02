@@ -1,0 +1,49 @@
+Script started on Sun 28 Feb 2016 07:33:19 PM PST
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kcc++ Ky[33m[39m[0m[27m[24m[J% c++ KyleLee_PSPAssign5.cpp[1m [0m[K[0m [?1l>[0m[27m[24m[J% c++ KyleLee_PSPAssign5.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a value for x[0]: 130
+Enter a value for x[1]: 650
+Enter a value for x[2]: 99
+Enter a value for x[3]: 150
+Enter a value for x[4]: 128
+Enter a value for x[5]: 302
+Enter a value for x[6]: 95
+Enter a value for x[7]: 945
+
+Enter a value for y[0]: 186
+Enter a value for y[1]: 699
+Enter a value for y[2]: 132
+Enter a value for y[3]: 272
+Enter a value for y[4]: 291
+Enter a value for y[5]: 331
+Enter a value for y[6]: 199
+Enter a value for y[7]: 1890
+Beta one: 1.74209
+Beta zero: -44.1866
+Average (x): 312.375
+Average (y): 500
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Enter a value for x[0]: 163
+Enter a value for x[1]: 765
+Enter a value for x[2]: 141
+Enter a value for x[3]: 166
+Enter a value for x[4]: 137
+Enter a value for x[5]: 355
+Enter a value for x[6]: 136
+Enter a value for x[7]: 1206
+
+Enter a value for y[0]: 186
+Enter a value for y[1]: 699
+Enter a value for y[2]: 132
+Enter a value for y[3]: 272
+Enter a value for y[4]: 291
+Enter a value for y[5]: 331
+Enter a value for y[6]: 199
+Enter a value for y[7]: 1890
+Beta one: 1.413
+Beta zero: -42.0638
+Average (x): 383.625
+Average (y): 500
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Sun 28 Feb 2016 07:37:05 PM PST

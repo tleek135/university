@@ -1,0 +1,114 @@
+// Class: CSE 330
+// Term: Fall 2015
+// Instructor: George M. Georgiou
+// Name: Kyle Lee
+// Homework 3
+// Title: Ch. 11, Written Exercises #15, 17, 18;
+// Ch. 14, Written Exercises #15, 17
+// Note: Ch. 14, #17 will be drawn by hand on a separate sheet of paper
+
+//Ch. 11, #15
+//The symmetric difference of A and B is defined as the set of
+//all elements x that are contained in either A or B, but NOT in both.
+//Using set operations, implement the function symDifference(), which
+//takes setA and setB as arguments and returns the symmetric difference.
+
+template <typename T>
+set<T> symDifference (const set<T>& setA, const set<T>& setB)
+{
+	set<T> returnSet;
+
+	returnSet = (setA + setB) - (setA * setB);
+	return returnSet;
+}
+
+
+//Ch. 11, #17
+
+int intArr[] = {15, 7, 32, 12};
+map<int, vector<int> > m;
+int i, j, value;
+for (i = 0; i < 4; i++) {
+	//Assign number at index i of array to test value
+	value = intArr[i];
+	//Start j at 2 (j will be our divisor)
+	j = 2;
+	
+	//As long as test value is greater than 1
+	while (value > 1) {
+		//If the test value is divided by j evenly (no remainder),
+		//use the current array value as key to map, and add the
+		//divisor to the vector associated with that key. 
+		//Then, update the test value by actually dividing it by
+		//j, the divisor.		
+		if (value % j == 0) {
+			m[intArr[i]].push_back(j);
+			value /= j;
+		}
+		//If not, increment the divisor and run the division test again		
+		else
+			j++;
+	}
+}
+
+(a) Describe the action of each step in the for loop.
+//Solution: commented on lines above.
+//The algorithm will result in the prime factorization of the given number.
+
+(b) List each entry of the map by first giving the key component and then
+the contents of the corresponding vector component. 
+Key			Vector
+---			------
+15			3 5
+7			7
+32			2 2 2 2 2
+12			2 2 3
+
+
+//Ch. 11, #18
+
+string strList[] = {"store", "map", "array", "set", "multimap", "string"};
+int strListSize = sizeof(strList)/sizeof(string);
+map<string, int> mLength;
+int i;
+
+(a) Write a loop that enters each string from the array to the map as the 
+key-value pair (string, string length).
+
+for (i = 0; i < strListSize; i++) {
+	mLength[strList[i]] = strList[i].length;
+}
+
+(b) Declare an iterator that locates elements in the map mLength. 
+Use the iterator to output all strings with a length of 5.
+
+map<string, int>::iterator iter;
+iter = mLength.begin();
+
+while (iter != mLength.end()) {
+	if ((*iter).second == 5) 
+		cout << (*iter).first << endl;
+
+	iter++;
+}
+
+//Ch. 14, #15
+A complete binary tree B, containing 50 nodes, is stored in a vector. 
+(a) What is the level of the tree?
+//Solution: Level 5 (root level is level 0)
+
+(b) How many nodes are leaf nodes? Non-leaf nodes? 
+//Solution: There are 19 leaf nodes and 31 non-leaf nodes. 
+
+(c) What is the index of the parent of B[35]?
+//Solution: The parent is located at B[17].
+
+(d) What are the indices of the children of node B[20]?
+//Solution: The children are at B[41] and B[42].
+
+(e) What is the index of the first node with no children? With one child?
+//Solution: The first node with no children is B[31]. The node with one
+//child is B[24].
+
+(f) What are the indices for all nodes at level 4 of the tree?
+//Solution: The nodes at level 4 range from B[15] to B[30].

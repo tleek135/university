@@ -1,0 +1,5 @@
+This is yet another
+test of the count program.
+This is to ensure that
+the program functions 
+as intended.

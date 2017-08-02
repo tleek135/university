@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+const int ROWS = 3;
+const int COLS = 4;
+
+double findMax(double a[ROWS][COLS]){
+	double maxValue = a[0][0];
+	for (int row = 0; row < ROWS; row++){
+		for (int column = 1; column < COLS; column++){
+			if (a[row][column] > maxValue)
+				maxValue = a[row][column];
+		}
+	}
+
+	return maxValue;
+}
+	
+
+
+
+int main(){
+
+	double a[][COLS] = {-5.0, -5.9, -5.3, -555,
+			    -5, -3, -5, -5,
+			    -5, -5, -5, -5};
+
+	assert(findMax(a) == -3);
+
+	cout << "All tests passed.\n";
+}

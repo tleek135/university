@@ -1,0 +1,20 @@
+// Class: CSE 330
+// Term: Fall 2015
+// Instructor: George M. Georgiou
+// Name: Kyle Lee
+// Lab 6
+// Title: Sieve of Eratosthenes
+
+#include <iostream>
+#include <vector>
+#include <list>
+
+using namespace std;
+
+list<int> listSieve(list<int> numbers)
+{
+	list<int> temp;
+	list<int>::iterator iter = numbers.begin();
+
+	for ( ; iter != number.end(); iter++) {
+		

@@ -1,0 +1,399 @@
+Script started on Mon 12 Jun 2017 11:41:25 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kmmake[?1l>[0m[27m[24m[J% make[K
+g++ -c -std=c++11 Parser.cpp
+g++ -std=c++11 -o lab4 CSE570_lab4main.cpp Parser.o
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab4[?1l>[0m[27m[24m[J% ./lab4[K
+Please enter the name of the grammar file: gram1.in
+List of Productions:
+0) S->X
+1) S->Y
+2) X->Z0X
+3) X->Z0Z
+4) Y->Z1Y
+5) Y->Z1Z
+6) Z->0Z1Z
+7) Z->1Z0Z
+8) Z->e
+
+The set of terminals is:
+0
+1
+
+The set of non-terminals is:
+S
+X
+Y
+Z
+
+The FIRST set for 0 is 0 
+The FIRST set for 1 is 1 
+The FIRST set for S is 0 1 e 
+The FIRST set for X is 0 1 e 
+The FIRST set for Y is 0 1 e 
+The FIRST set for Z is 0 1 e 
+
+The FOLLOW set for S is $ 
+The FOLLOW set for X is $ 
+The FOLLOW set for Y is $ 
+The FOLLOW set for Z is $ 0 1 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char S: 
+S->.X
+S->.Y
+X->.Z0X
+X->.Z0Z
+Y->.Z1Y
+Y->.Z1Z
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+State I1, reached with char 0: 
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+Z->0.Z1Z
+State I2, reached with char 1: 
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+Z->1.Z0Z
+State I3, reached with char X: 
+S->X.
+State I4, reached with char Y: 
+S->Y.
+State I5, reached with char Z: 
+X->Z.0X
+X->Z.0Z
+Y->Z.1Y
+Y->Z.1Z
+State I6, reached with char Z: 
+Z->0Z.1Z
+State I7, reached with char Z: 
+Z->1Z.0Z
+State I8, reached with char 0: 
+X->.Z0X
+X->.Z0Z
+X->Z0.X
+X->Z0.Z
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+State I9, reached with char 1: 
+Y->.Z1Y
+Y->.Z1Z
+Y->Z1.Y
+Y->Z1.Z
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+State I10, reached with char 1: 
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+Z->0Z1.Z
+State I11, reached with char 0: 
+Z->.
+Z->.0Z1Z
+Z->.1Z0Z
+Z->1Z0.Z
+State I12, reached with char X: 
+X->Z0X.
+State I13, reached with char Z: 
+X->Z.0X
+X->Z.0Z
+X->Z0Z.
+State I14, reached with char Y: 
+Y->Z1Y.
+State I15, reached with char Z: 
+Y->Z.1Y
+Y->Z.1Z
+Y->Z1Z.
+State I16, reached with char Z: 
+Z->0Z1Z.
+State I17, reached with char Z: 
+Z->1Z0Z.
+The ACTION table for this grammar is: 
+State 0: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 1: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 2: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 3: $ <accept>; 
+State 4: $ <accept>; 
+State 5: 0 <s8s8>; 1 <s9s9>; 
+State 6: 1 <s10>; 
+State 7: 0 <s11>; 
+State 8: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 9: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 10: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 11: $ <r8>; 0 <r8s1>; 1 <r8s2>; 
+State 12: $ <r2>; 
+State 13: $ <r3>; 0 <s8s8>; 
+State 14: $ <r4>; 
+State 15: $ <r5>; 1 <s9s9>; 
+State 16: $ <r6>; 0 <r6>; 1 <r6>; 
+State 17: $ <r7>; 0 <r7>; 1 <r7>; 
+The GOTO table for this grammar is: 
+State 0: X <3>; Y <4>; Z <5>; 
+State 1: Z <6>; 
+State 2: Z <7>; 
+State 3: 
+State 4: 
+State 5: 
+State 6: 
+State 7: 
+State 8: X <12>; Z <13>; 
+State 9: Y <14>; Z <15>; 
+State 10: Z <16>; 
+State 11: Z <17>; 
+State 12: 
+State 13: 
+State 14: 
+State 15: 
+State 16: 
+State 17: 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K./lab4[?1l>[0m[27m[24m[J% ./lab4[K
+Please enter the name of the grammar file: gram2.in
+List of Productions:
+0) S->P
+1) P->1P1
+2) P->0P0
+3) P->1
+4) P->0
+5) P->e
+
+The set of terminals is:
+0
+1
+
+The set of non-terminals is:
+P
+S
+
+The FIRST set for 0 is 0 
+The FIRST set for 1 is 1 
+The FIRST set for P is 0 1 e 
+The FIRST set for S is 0 1 e 
+
+The FOLLOW set for P is $ 0 1 
+The FOLLOW set for S is $ 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char S: 
+P->.
+P->.0
+P->.0P0
+P->.1
+P->.1P1
+S->.P
+State I1, reached with char 0: 
+P->.
+P->.0
+P->.0P0
+P->.1
+P->.1P1
+P->0.
+P->0.P0
+State I2, reached with char 1: 
+P->.
+P->.0
+P->.0P0
+P->.1
+P->.1P1
+P->1.
+P->1.P1
+State I3, reached with char P: 
+S->P.
+State I4, reached with char P: 
+P->0P.0
+State I5, reached with char P: 
+P->1P.1
+State I6, reached with char 0: 
+P->0P0.
+State I7, reached with char 1: 
+P->1P1.
+The ACTION table for this grammar is: 
+State 0: $ <r5>; 0 <r5s1s1>; 1 <r5s2s2>; 
+State 1: $ <r5r4>; 0 <r5s1s1r4>; 1 <r5s2s2r4>; 
+State 2: $ <r5r3>; 0 <r5s1s1r3>; 1 <r5s2s2r3>; 
+State 3: $ <accept>; 
+State 4: 0 <s6>; 
+State 5: 1 <s7>; 
+State 6: $ <r2>; 0 <r2>; 1 <r2>; 
+State 7: $ <r1>; 0 <r1>; 1 <r1>; 
+The GOTO table for this grammar is: 
+State 0: P <3>; 
+State 1: P <4>; 
+State 2: P <5>; 
+State 3: 
+State 4: 
+State 5: 
+State 6: 
+State 7: 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab4[?1l>[0m[27m[24m[J% ./lab4[K
+Please enter the name of the grammar file: gram3.in
+List of Productions:
+0) S->Ee
+1) S->Te
+2) S->Fe
+3) E->00E11Ee
+4) E->11E00Ee
+5) E->e
+6) T->11Te
+7) T->e
+8) F->00Fe
+9) F->e
+
+The set of terminals is:
+0
+1
+
+The set of non-terminals is:
+E
+F
+S
+T
+
+The FIRST set for 0 is 0 
+The FIRST set for 1 is 1 
+The FIRST set for E is 0 1 e 
+The FIRST set for F is 0 e 
+The FIRST set for S is 0 1 e 
+The FIRST set for T is 1 e 
+
+The FOLLOW set for E is 0 1 E F S T 
+The FOLLOW set for F is E F S T 
+The FOLLOW set for S is $ 
+The FOLLOW set for T is E F S T 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char S: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+F->.
+F->.00Fe
+S->.Ee
+S->.Fe
+S->.Te
+T->.
+T->.11Te
+State I1, reached with char 0: 
+E->0.0E11Ee
+F->0.0Fe
+State I2, reached with char 1: 
+E->1.1E00Ee
+T->1.1Te
+State I3, reached with char E: 
+S->E.e
+State I4, reached with char F: 
+S->F.e
+State I5, reached with char T: 
+S->T.e
+State I6, reached with char 0: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->00.E11Ee
+F->.
+F->.00Fe
+F->00.Fe
+State I7, reached with char 1: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->11.E00Ee
+T->.
+T->.11Te
+T->11.Te
+State I8, reached with char 1: 
+E->1.1E00Ee
+State I9, reached with char E: 
+E->00E.11Ee
+State I10, reached with char F: 
+F->00F.e
+State I11, reached with char 0: 
+E->0.0E11Ee
+State I12, reached with char E: 
+E->11E.00Ee
+State I13, reached with char T: 
+T->11T.e
+State I14, reached with char 1: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->11.E00Ee
+State I15, reached with char 1: 
+E->00E1.1Ee
+State I16, reached with char 0: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->00.E11Ee
+State I17, reached with char 0: 
+E->11E0.0Ee
+State I18, reached with char 1: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->00E11.Ee
+State I19, reached with char 0: 
+E->.
+E->.00E11Ee
+E->.11E00Ee
+E->11E00.Ee
+State I20, reached with char E: 
+E->00E11E.e
+State I21, reached with char E: 
+E->11E00E.e
+The ACTION table for this grammar is: 
+State 0: 0 <r5s1s1>; 1 <r5s2s2>; E <r5r9r7>; F <r5r9r7>; S <r5r9r7>; T <r5r9r7>; 
+State 1: 0 <s6s6>; 
+State 2: 1 <s7s7>; 
+State 3: 
+State 4: 
+State 5: 
+State 6: 0 <r5s1s1>; 1 <r5s8>; E <r5r9>; F <r5r9>; S <r5r9>; T <r5r9>; 
+State 7: 0 <r5s11>; 1 <r5s2s2>; E <r5r7>; F <r5r7>; S <r5r7>; T <r5r7>; 
+State 8: 1 <s14>; 
+State 9: 1 <s15>; 
+State 10: 
+State 11: 0 <s16>; 
+State 12: 0 <s17>; 
+State 13: 
+State 14: 0 <r5s11>; 1 <r5s8>; E <r5>; F <r5>; S <r5>; T <r5>; 
+State 15: 1 <s18>; 
+State 16: 0 <r5s11>; 1 <r5s8>; E <r5>; F <r5>; S <r5>; T <r5>; 
+State 17: 0 <s19>; 
+State 18: 0 <r5s11>; 1 <r5s8>; E <r5>; F <r5>; S <r5>; T <r5>; 
+State 19: 0 <r5s11>; 1 <r5s8>; E <r5>; F <r5>; S <r5>; T <r5>; 
+State 20: 
+State 21: 
+The GOTO table for this grammar is: 
+State 0: E <3>; F <4>; T <5>; 
+State 1: 
+State 2: 
+State 3: 
+State 4: 
+State 5: 
+State 6: E <9>; F <10>; 
+State 7: E <12>; T <13>; 
+State 8: 
+State 9: 
+State 10: 
+State 11: 
+State 12: 
+State 13: 
+State 14: E <12>; 
+State 15: 
+State 16: E <9>; 
+State 17: 
+State 18: E <20>; 
+State 19: E <21>; 
+State 20: 
+State 21: 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 12 Jun 2017 11:43:17 PM PDT

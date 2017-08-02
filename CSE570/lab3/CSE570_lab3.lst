@@ -1,0 +1,217 @@
+Script started on Mon 12 Jun 2017 11:11:08 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kmmake[?1l>[0m[27m[24m[J% make[K
+g++ -c Parser.cpp
+g++ -o lab3 CSE570_lab3main.cpp Parser.o
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab3[?1l>[0m[27m[24m[J% ./lab3[K
+Please enter the name of the grammar file: g417
+List of Productions:
+D->+TD
+D->e
+E->TD
+F->(E)
+F->I
+I->x
+I->y
+I->z
+T->FU
+U->*FU
+U->e
+
+The set of terminals is:
+(
+)
+*
++
+x
+y
+z
+
+The set of non-terminals is:
+D
+E
+F
+I
+T
+U
+
+The FIRST set for ( is ( 
+The FIRST set for ) is ) 
+The FIRST set for * is * 
+The FIRST set for + is + 
+The FIRST set for D is + e 
+The FIRST set for E is ( x y z 
+The FIRST set for F is ( x y z 
+The FIRST set for I is x y z 
+The FIRST set for T is ( x y z 
+The FIRST set for U is * e 
+The FIRST set for x is x 
+The FIRST set for y is y 
+The FIRST set for z is z 
+
+The FOLLOW set for D is $ ) 
+The FOLLOW set for E is $ ) 
+The FOLLOW set for F is $ ) * + 
+The FOLLOW set for I is $ ) * + 
+The FOLLOW set for T is $ ) + 
+The FOLLOW set for U is $ ) + 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char E: 
+E->.TD
+F->.(E)
+F->.I
+I->.x
+I->.y
+I->.z
+T->.FU
+State I1, reached with char (: 
+E->.TD
+F->(.E)
+F->.(E)
+F->.I
+I->.x
+I->.y
+I->.z
+T->.FU
+State I2, reached with char F: 
+T->F.U
+U->.
+U->.*FU
+State I3, reached with char I: 
+F->I.
+State I4, reached with char T: 
+D->.
+D->.+TD
+E->T.D
+State I5, reached with char x: 
+I->x.
+State I6, reached with char y: 
+I->y.
+State I7, reached with char z: 
+I->z.
+State I8, reached with char E: 
+F->(E.)
+State I9, reached with char *: 
+F->.(E)
+F->.I
+I->.x
+I->.y
+I->.z
+U->*.FU
+State I10, reached with char U: 
+T->FU.
+State I11, reached with char +: 
+D->+.TD
+F->.(E)
+F->.I
+I->.x
+I->.y
+I->.z
+T->.FU
+State I12, reached with char D: 
+E->TD.
+State I13, reached with char ): 
+F->(E).
+State I14, reached with char F: 
+U->*F.U
+U->.
+U->.*FU
+State I15, reached with char T: 
+D->+T.D
+D->.
+D->.+TD
+State I16, reached with char U: 
+U->*FU.
+State I17, reached with char D: 
+D->+TD.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab3[?1l>[0m[27m[24m[J% ./lab3[K
+Please enter the name of the grammar file: g419
+List of Productions:
+E->E+T
+E->T
+F->(E)
+F->i
+S->E
+T->F
+T->T*F
+
+The set of terminals is:
+(
+)
+*
++
+i
+
+The set of non-terminals is:
+E
+F
+S
+T
+
+The FIRST set for ( is ( 
+The FIRST set for ) is ) 
+The FIRST set for * is * 
+The FIRST set for + is + 
+The FIRST set for E is ( i 
+The FIRST set for F is ( i 
+The FIRST set for S is ( i 
+The FIRST set for T is ( i 
+The FIRST set for i is i 
+
+The FOLLOW set for E is $ ) + 
+The FOLLOW set for F is $ ) * + 
+The FOLLOW set for S is $ 
+The FOLLOW set for T is $ ) * + 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char S: 
+E->.E+T
+E->.T
+F->.(E)
+F->.i
+S->.E
+T->.F
+T->.T*F
+State I1, reached with char (: 
+E->.E+T
+E->.T
+F->(.E)
+F->.(E)
+F->.i
+T->.F
+T->.T*F
+State I2, reached with char E: 
+E->E.+T
+S->E.
+State I3, reached with char F: 
+T->F.
+State I4, reached with char T: 
+E->T.
+T->T.*F
+State I5, reached with char i: 
+F->i.
+State I6, reached with char E: 
+E->E.+T
+F->(E.)
+State I7, reached with char +: 
+E->E+.T
+F->.(E)
+F->.i
+T->.F
+T->.T*F
+State I8, reached with char *: 
+F->.(E)
+F->.i
+T->T*.F
+State I9, reached with char ): 
+F->(E).
+State I10, reached with char T: 
+E->E+T.
+T->T.*F
+State I11, reached with char F: 
+T->T*F.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 12 Jun 2017 11:11:50 PM PDT

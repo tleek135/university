@@ -1,0 +1,47 @@
+// Class: CSE 330
+// Term: Fall 2015
+// Instructor: George M. Georgiou
+// Name: Kyle Lee
+// Lab 7
+// Title: Ch. 11 #27, Part A (set)
+//Initialize a set with certain city and state values,
+//then use a find() function to determine if a certain 
+//city/state is in the set. Test all possible keys, as
+//well as one key that is not in the set.
+
+#include <iostream>
+#include <set>
+#include "d_state.h" //declaration of stateCity class
+
+main()
+{
+	string stateName; //to hold user input
+	set<stateCity> s;
+	set<stateCity>::iterator iter;
+
+	//Create instances of stateCity, then put them into the set
+	stateCity first("Arizona", "Phoenix");
+	s.insert(first);
+	stateCity second("Illinois", "Chicago");
+	s.insert(second);
+	stateCity third("California", "Sacramento");
+	s.insert(third);
+	
+	//Ask for user input
+	cout << "Please enter the name of a state: ";
+	cin >> stateName;
+
+	//Use find() to search for the state name
+	iter = s.find(stateName);
+
+	//If state is found, display city and state;
+	//If not, display error message
+	if (iter != s.end())
+		cout << *iter << endl;
+	else
+		cout << stateName << " was not found.\n";
+
+}
+
+
+

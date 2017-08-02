@@ -1,0 +1,13 @@
+	mm.insert(pair<string, int>("3", 3));
+	mm.insert(pair<string, int>("4", 4));
+	mm.insert(pair<string, int>("4", 4));
+	mm.insert(pair<string, int>("5", 5));
+	mm.insert(pair<string, int>("5", 5));
+	mm.insert(pair<string, int>("6", 6));
+	mm.insert(pair<string, int>("6", 6));
+	mm.insert(pair<string, int>("7", 7));
+	mm.insert(pair<string, int>("8", 8));
+	mm.insert(pair<string, int>("9", 9));
+	mm.insert(pair<string, int>("9", 9));
+	mm.insert(pair<string, int>("10", 10));
+	

@@ -1,0 +1,34 @@
+Script started on Wed 28 Oct 2015 09:21:34 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kcc++ Ho[33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ Homework1_Ch[K4[33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ Homework1_Ch4_Number[K21 [33m[39m[33m[39m[33m[39m[0m[27m[24m[J% c++ Homework1_Ch4_Number25.cpp[K[?1l>[0m[27m[24m[J% c++ Homework1_Ch4_Number25.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K..a/.ou    . ./a.out[?1l>[0m[27m[24m[J% ./a.out[K
+The average value is: 13
+
+The values in the array and their deviation from the average:
+
+Value: 1
+Deviation: -12
+
+Value: 6
+Deviation: -7
+
+Value: 2
+Deviation: -11
+
+Value: 9
+Deviation: -4
+
+Value: 12
+Deviation: -1
+
+Value: 15
+Deviation: 2
+
+Value: 33
+Deviation: 20
+
+Value: 28
+Deviation: 15
+
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Wed 28 Oct 2015 09:22:01 AM PDT

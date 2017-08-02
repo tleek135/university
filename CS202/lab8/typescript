@@ -1,0 +1,28 @@
+Script started on Mon 01 Jun 2015 09:01:16 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Klls[?1l>[0m[27m[24m[J% ls[K
+input.txt  lab8.cpp  lab8.cpp~  typescript
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kgg++ lab8.cpp[?1l>[0m[27m[24m[J% g++ lab8.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+5
+10
+15
+20
+25
+30
+35
+40
+Please enter a number to search for in the vector: 1
+-1
+Please enter another number, or type Ctrl-D when done: 15
+2
+Please enter another number, or type Ctrl-D when done: 18
+-1
+Please enter another number, or type Ctrl-D when done: 40
+7
+Please enter another number, or type Ctrl-D when done: 30
+5
+Please enter another number, or type Ctrl-D when done: 50
+-1
+Please enter another number, or type Ctrl-D when done: [1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 01 Jun 2015 09:02:14 AM PDT

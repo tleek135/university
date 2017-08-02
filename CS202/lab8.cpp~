@@ -1,0 +1,68 @@
+/********************************************************************
+ * Kyle Lee
+ * lab8.cpp
+ * May 27, 2015
+ * CSE 202 (Wednesday lab)
+ * Description: Analyze selection sort and binary search algorithms
+   and their time complexities. 
+ * Solution: Implement code for selection sort and binary search, 
+   and then test them with sample input from the user. 
+ * Percent complete:
+*********************************************************************/
+
+#include <iostream>
+#include <vector>
+#include <fstream>
+
+using namespace std;
+
+void selection_sort(vector<int> & arr)
+{
+	int i, j;
+	
+	for (i = 0; i < arr.size()-1; i++) {
+		for (j = i+1; j < arr.size(); j++) {
+			if (arr[i] > arr[j])
+				swap(arr[i], arr[j]);
+		}
+	}
+}
+
+int binary_search(vector<int> v, int from, int to, int value)
+{
+	if (from > to)
+		return -1;
+	int mid = (from + to) / 2;
+	if (v[mid] == value)
+		return mid;
+	else if (v[mid] < value)
+		return binary_search(v, mid + 1, to, value);
+	else
+		return binary_search(v, from, mid - 1, value);
+}
+
+main()
+{
+	vector<int> numbers;
+	int input;
+	ifstream file;
+	file.open("input.txt");
+	file >> input;
+	
+	while (!file.eof()) {
+		numbers.push_back(input);
+		file >> input;
+	}
+
+	file.close();
+
+	selection_sort(numbers);
+
+	for (int i = 0; i < numbers.size(); i++)
+		cout << numbers[i] << endl;
+
+	
+	
+}
+		
+

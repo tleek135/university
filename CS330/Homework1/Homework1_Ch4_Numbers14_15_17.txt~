@@ -1,0 +1,79 @@
+Class: CSE 330
+Term: Fall 2015
+Instructor: George M. Georgiou
+Name: Kyle Lee
+Homework 1, Chapter 4, #14, 15, 17
+
+//Ch. 4 #14
+//Give the value of v.size() after executing each of the following statements:
+
+vector<int> v(25); 
+//Answer: v.size() = 25
+
+v.push_back(-4); 
+//v.size() = 26
+
+v.resize(40); 
+//v.size() = 40
+
+m = v.back();
+//v.size() = 40
+
+v.pop_back();
+//v.size() = 39
+
+
+//Ch. 4 #15
+//Given the following declarations, what is the list of elements in v after
+the execution of the statement v.resize(5)?
+
+int arr[] = {4, 6, 2, 9, 3, 8, 7, 1};
+int arrSize = sizeof(arr)/sizeof(int);
+vector<int> v(arr, arr+arrSize);
+//Answer: v will have the elements {4, 6, 2, 9, 3}
+
+
+//Ch. 4 #17
+//Implement two versions of the reverseVector() function, which reverses the order 
+//of elements in a vector. 
+
+(a) //By exchanging successive pairs of elements (switch v[0] with v[n-1], etc.)
+template <typename T>
+void reverseVector(vector<T>& v)
+{
+	int n = v.size();
+
+	int i = 0;
+	int j = n - 1;
+	T temp;
+
+	while (i < j) {
+		temp = v[i];
+		v[i] = v[j];
+		v[j] = temp;
+		i++;
+		j--;
+	}
+
+}
+
+(b) //By copying the elements of v in reverse into a new vector, and then returning that 
+//vector
+
+template <typename T>
+vector<T> reverseVector(const vector<T>& v)
+{
+	vector<T> temp(v.size());
+	int i, k;
+
+	for (i = v.size()-1, k = 0; i != -1; i--, k++)
+		temp[k] = v[i];
+
+	return temp;
+}
+
+
+
+
+
+		

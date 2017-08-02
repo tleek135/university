@@ -1,0 +1,24 @@
+/*if (   (space[0] == 'X' && space[1] == 'X' && space[2] == 'X')
+            || (space[3] == 'X' && space[4] == 'X' && space[5] == 'X')
+	    || (space[6] == 'X' && space[7] == 'X' && space[8] == 'X')
+	    || (space[0] == 'X' && space[3] == 'X' && space[6] == 'X')
+	    || (space[1] == 'X' && space[4] == 'X' && space[7] == 'X')
+            || (space[2] == 'X' && space[5] == 'X' && space[8] == 'X')
+	    || (space[0] == 'X' && space[4] == 'X' && space[8] == 'X')
+            || (space[2] == 'X' && space[4] == 'X' && space[6] == 'X')
+	   ){
+		win = 1;
+		return win;
+ 	} 
+	else if( (space[0] == 'O' && space[1] == 'O' && space[2] == 'O')
+            || (space[3] == 'O' && space[4] == 'O' && space[5] == 'O')
+	    || (space[6] == 'O' && space[7] == 'O' && space[8] == 'O')
+	    || (space[0] == 'O' && space[3] == 'O' && space[6] == 'O')
+	    || (space[1] == 'O' && space[4] == 'O' && space[7] == 'O')
+            || (space[2] == 'O' && space[5] == 'O' && space[8] == 'O')
+	    || (space[0] == 'O' && space[4] == 'O' && space[8] == 'O')
+            || (space[2] == 'O' && space[4] == 'O' && space[6] == 'O')
+	   ){
+		win = 1;
+		return win;
+	}*/ 

@@ -1,0 +1,77 @@
+Script started on Thu 15 Jun 2017 03:22:50 PM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../lab5[?1l>[0m[27m[24m[J% ./lab5[K
+Please enter the name of the grammar file: finalgram.in
+List of Productions:
+0) S->TL
+1) T->i
+2) T->r
+3) L->L,v
+4) L->v
+
+The set of terminals is:
+,
+i
+r
+v
+
+The set of non-terminals is:
+L
+S
+T
+
+The FIRST set for , is , 
+The FIRST set for L is v 
+The FIRST set for S is i r 
+The FIRST set for T is i r 
+The FIRST set for i is i 
+The FIRST set for r is r 
+The FIRST set for v is v 
+
+The FOLLOW set for L is $ , 
+The FOLLOW set for S is $ 
+The FOLLOW set for T is v 
+
+
+The canonical LR(0) sets for the grammar are: 
+State I0, reached with char S: 
+S->.TL
+T->.i
+T->.r
+State I1, reached with char T: 
+L->.L,v
+L->.v
+S->T.L
+State I2, reached with char i: 
+T->i.
+State I3, reached with char r: 
+T->r.
+State I4, reached with char L: 
+L->L.,v
+S->TL.
+State I5, reached with char v: 
+L->v.
+State I6, reached with char ,: 
+L->L,.v
+State I7, reached with char v: 
+L->L,v.
+The ACTION table for this grammar is: 
+State 0: i <s2>; r <s3>; 
+State 1: v <s5>; 
+State 2: v <r1>; 
+State 3: v <r2>; 
+State 4: $ <accept>; , <s6>; 
+State 5: $ <r4>; , <r4>; 
+State 6: v <s7>; 
+State 7: $ <r3>; , <r3>; 
+The GOTO table for this grammar is: 
+State 0: T <1>; 
+State 1: L <4>; 
+State 2: 
+State 3: 
+State 4: 
+State 5: 
+State 6: 
+State 7: 
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Thu 15 Jun 2017 03:23:23 PM PDT

@@ -1,0 +1,19 @@
+Script started on Mon 18 May 2015 10:52:48 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kwwc count.cpp[?1l>[0m[27m[24m[J% wc count.cpp[K
+  69  206 1537 count.cpp
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kwwc test.txt[?1l>[0m[27m[24m[J% wc test.txt[K
+ 3 11 56 test.txt
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kwwc test2.txt[?1l>[0m[27m[24m[J% wc test2.txt[K
+  5  19 106 test2.txt
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kgg++ count.cpp[?1l>[0m[27m[24m[J% g++ count.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Please enter a file name, or type Ctrl-D to finish: count.cpp
+69 206 1537
+Please enter a file name, or type Ctrl-D to finish: bleh.txt
+File not found. Please enter a different file name: test.txt
+3 11 56
+Please enter a file name, or type Ctrl-D to finish: test2.txt
+5 19 106
+Please enter a file name, or type Ctrl-D to finish: [1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 18 May 2015 10:54:18 AM PDT

@@ -1,0 +1,28 @@
+Script started on Sun 03 May 2015 01:07:23 PM PDT
+                                                                                [0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77D[?1h=[0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77Dmmake[?1l>[0m[27m[24m[J% make[K[61C[32m~/CS202/lab4[39m[73D
+g++ -c Person_main.cpp
+g++ -c Person.cpp
+g++ -o Person Person_main.o Person.o
+                                                                                [0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77D[?1h=[0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77D..?. ./Person[?1l>[0m[27m[24m[J% ./Person[K[57C[32m~/CS202/lab4[39m[69D
+Enter the names, terminate with -1: Jake
+Enter another name, end with -1: ERioc     r Eric
+Enter another name, end with -1: Jessica
+Enter another name, end with -1: John
+Enter another name, end with -1: Jessica
+You have already entered that name. Please enter a different name: Louis
+Enter another name, end with -1: -1
+Who is Jake's best friend? Jessica
+Who is Eric's best friend? John
+Who is Jessica's best friend? John
+Who is John's best friend? Bob
+Couldn't find best friend Bob
+Please enter a different name for John's best friend: Eric
+Who is Louis's best friend? Jack  ke
+Jake      Jessica    1
+Eric      John       1
+Jessica   John       1
+John      Eric       2
+Louis     Jake       0
+                                                                                [0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77D[?1h=[0m[27m[24m[J% [K[65C[32m~/CS202/lab4[39m[77Deexit[?1l>[0m[27m[24m[J% exit[K[61C[32m~/CS202/lab4[39m[73D
+
+Script done on Sun 03 May 2015 01:09:11 PM PDT

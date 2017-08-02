@@ -1,0 +1,18 @@
+Script started on Mon 11 May 2015 10:48:01 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kmmake[?1l>[0m[27m[24m[J% make[K
+g++ -c Person.cpp
+g++ -c Student.cpp
+g++ -c Instructor.cpp
+g++ -o Person_main Person.o Student.o Instructor.o Person_main_using_UML.cpp
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../Person_main[?1l>[0m[27m[24m[J% ./Person_main[K
+Jack 3/11/70
+Katie 4/12/80
+    Student, Major: CS
+Mr. Tom 5/13/90
+    Instructor, Salary: 55000
+Ms. Pam 6/14/80
+    Instructor, Salary: 60000
+Tom 5/13/90
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 11 May 2015 10:48:36 AM PDT

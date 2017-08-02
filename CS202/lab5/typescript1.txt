@@ -1,0 +1,14 @@
+Script started on Mon 11 May 2015 10:47:03 AM PDT
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Kgg++ Person_main_lab5.cpp[?1l>[0m[27m[24m[J% g++ Person_main_lab5.cpp[K
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [K../a.out[?1l>[0m[27m[24m[J% ./a.out[K
+Jack 3/11/70
+Katie 4/12/80
+    Student, Major: CS
+Mr. Tom 5/13/90
+    Instructor, Salary: 55000
+Ms. Pam 6/14/80
+    Instructor, Salary: 60000
+Tom 5/13/90
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[J% [K[?1h=[0m[27m[24m[J% [Keexit[?1l>[0m[27m[24m[J% exit[K
+
+Script done on Mon 11 May 2015 10:47:29 AM PDT

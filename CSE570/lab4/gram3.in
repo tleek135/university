@@ -1,0 +1,14 @@
+0
+1
+$
+S->Ee
+S->Te
+S->Fe
+E->00E11Ee
+E->11E00Ee
+E->e
+T->11Te
+T->e
+F->00Fe
+F->e
+$
